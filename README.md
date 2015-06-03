@@ -33,14 +33,14 @@ AdvSettings.getPublic('any.client.test.setting', 'any default value or null');
   "public": {}
 }    
 ```
-2) Set that code in startup folder to use auto generating settings file .By default it will generate **settings.json** from **default-settings.json** if **settings.json** not exists.
+2) Set that code in startup folder to use auto generating settings file. By default it will generate **settings.json** from **default-settings.json** if **settings.json** not exists.
 So you can set **settings.json** to **.gitignore** and keep **default-settings.json** for developers.  
 ```javascript
 Meteor.startup(function() {  
     AdvSettings.makeSettingsFile();  
 });
-3) Set **verbose**` setting in **true** to check when AdvSettings used default value or turn off it by **false** value, by default is **true**   
-There was warning in server console or in browser console.   
+```
+3) Set **verbose**` setting in **true** to check when AdvSettings used default value or turn off it by **false** value, by default is **true**. There was warning in server console or in browser console.   
 ```javascript
 {
   "AdvSettings": {
