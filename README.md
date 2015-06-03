@@ -40,7 +40,7 @@ Meteor.startup(function() {
     AdvSettings.makeSettingsFile();  
 });
 ```
-3) Set **verbose**` setting in **true** to check when AdvSettings used default value or turn off it by **false** value, by default is **true**. There was warning in server console or in browser console.   
+3) Set **verbose** setting in **true** to check when AdvSettings used default value or turn off it by **false** value, by default is **true**. There was warning in server console or in browser console.   
 ```javascript
 {
   "AdvSettings": {
