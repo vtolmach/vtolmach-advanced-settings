@@ -20,7 +20,13 @@ var _AdvSettings =  function () {
                 paramValue = paramValue[key];
             } else {
                 paramValue = defaultVal;
-                self.log('Can`t find setting by context "' + context + '" used default value "' + defaultVal + '" ');
+                if(typeof(defaultVal) === 'object') {
+                    self.log('Can`t find setting by context "' + context + '" used default value :');
+                    self.log(defaultVal);
+                } else {
+                    self.log('Can`t find setting by context "' + context + '" used default value : "' + defaultVal + '" ');
+                }
+
                 break;
             }
         }
