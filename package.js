@@ -1,6 +1,6 @@
 Package.describe({
     summary: "Provide advanced (logging, default values, generating file) functionality for meteor settings",
-    version: "1.0.0",
+    version: "0.0.1",
     name: "vtolmach:advanced-settings",
     documentation: 'README.md',
     git: 'https://github.com/vtolmach/vtolmach-advanced-settings.git'
