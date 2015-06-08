@@ -1,6 +1,6 @@
 Package.describe({
     summary: "Provide advanced (logging, default values, generating file) functionality for meteor settings",
-    version: "1.0.2",
+    version: "1.0.3",
     name: "vtolmach:advanced-settings",
     documentation: 'README.md',
     git: 'https://github.com/vtolmach/vtolmach-advanced-settings.git'
@@ -8,7 +8,6 @@ Package.describe({
 
 
 Package.onUse(function (api) {
-    api.use('fs');
     api.versionsFrom('1.1.0.2');
     api.addFiles('src/advanced-settings.js');
     api.addFiles('src/advanced-settings-server.js', 'server');
@@ -16,7 +15,6 @@ Package.onUse(function (api) {
 });
 
 Package.onTest(function(api) {
-    api.use('fs');
     api.use('tinytest');
     api.addFiles('src/advanced-settings.js');
     api.addFiles('src/advanced-settings-tests.js');
