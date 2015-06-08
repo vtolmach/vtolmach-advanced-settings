@@ -8,15 +8,15 @@ Package.describe({
 
 
 Package.onUse(function (api) {
+    api.use('fs');
     api.versionsFrom('1.1.0.2');
-    api.use('underscore');
     api.addFiles('src/advanced-settings.js');
     api.addFiles('src/advanced-settings-server.js', 'server');
     api.export('AdvSettings');
 });
 
 Package.onTest(function(api) {
-    api.use('underscore');
+    api.use('fs');
     api.use('tinytest');
     api.addFiles('src/advanced-settings.js');
     api.addFiles('src/advanced-settings-tests.js');
